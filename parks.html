@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A National Park Search Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- <form > -->
+            <!-- <label for="">State</label> -->
+            <!-- <select id="StateList"> -->
+                <!-- <option value="">Select...</option> -->
+            <!-- </select> -->
+        <!-- </form> -->
+
+        <h3>A National Parks Search</h3> 
+        <table id="nationalParkTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip</th>
+              <th>Phone</th>
+              <th>Website</th>
+            </tr>
+          </thead>
+          <tbody id="nationalParkTableBody"></tbody>
+        </table>
+    </main>
+    <footer></footer>
+
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+    <script src="scripts/nationalParkdata.js"></script>
+    <script src="scripts/parks.js"></script>
+</body>
+</html>
