@@ -9,8 +9,8 @@ const mountainsList = document.getElementById("mountainsList");
 function loadMountainsList() {
   for (const mountainName of mountainsArray) {
     let option = document.createElement("option");
-    option.textContent = mountainName;
-    option.value = mountainName;
+    option.innerText = mountainName.name;
+    // option.value = mountainName;
     mountainsList.appendChild(option);
   }
 }

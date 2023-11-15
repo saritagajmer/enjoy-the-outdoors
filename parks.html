@@ -10,19 +10,31 @@
   <body>
     <header></header>
     <main>
+      <fieldset class="radio">
+        <input type="radio" name="parkTypeSelector" id="statesRadio" />
+        <label for="statesRadio">States/Territories</label>
+
+        <input type="radio" name="parkTypeSelector" id="typeRadio" />
+        <label for="typeRadio">Park Types</label>
+
+        <input type="radio" name="parkTypeSelector" id="allRadio" />
+        <label for="allRadio">All Parks</label>
+      </fieldset>
+    </main>
+    <main>
       <form>
-        <label for="statesList">State</label>
-        <select id="statesList">
+        <label style="display: none" for="" id="labelForStates">State</label>
+        <select style="display: none" id="statesList">
           <option value="">Select...</option>
         </select>
-        
-        <label for="statesList">State</label>
-        <select id="statesList">
+
+        <label style="display: none" for="" id="labelForType">Park Type</label>
+        <select style="display: none" id="parkTypeList">
           <option value="">Select...</option>
         </select>
-        
-        <h3>A National Parks Search</h3>
-        <table id="nationalParkTable">
+
+        <!-- <h3>A National Parks Search</h3> -->
+        <table style="display: none" id="nationalParkTable">
           <thead>
             <tr>
               <th>Name</th>
