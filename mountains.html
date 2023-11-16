@@ -12,15 +12,30 @@
       <!-- <h2>outdoor explorer</h2> -->
     </header>
     <main>
-
       <form>
-
-        <label for="mountainsList">Select Mountain</label>
+        <label for="">Select Mountain</label>
         <select id="mountainsList">
           <option value="">Select...</option>
         </select>
-
       </form>
+      <article id="articleStyle" style="display: none;">
+        <table class="grid" id="mountainsTable" style="display: none">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Elevation</th>
+              <th scope="col">Effort</th>
+              <th scope="col">image</th>
+              <th scope="col">Desc</th>
+              <th scope="col">Lat</th>
+              <th scope="col">Lng</th>
+            </tr>
+          </thead>
+          <tbody scope="row" id="mountainsTableBody"></tbody>
+        </table>
+
+        <div id="imageMountain" style="display: none"></div>
+      </article>
     </main>
     <footer></footer>
 

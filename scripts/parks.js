@@ -12,16 +12,16 @@ const labelForStates = document.getElementById("labelForStates");
 const labelForType = document.getElementById("labelForType");
 
 function loadNationalParkTable() {
-  parksTableBody.innerHTML = "";
+  nationalParkTableBody.innerHTML = "";
   const state = allRadio.value;
   if (state) {
-    parksTable.style.display = "block";
+    nationalParkTable.style.display = "block";
     labelForType.style.display = "none";
     parkTypeList.style.display = "none";
     labelForStates.style.display = "none";
     statesList.style.display = "none";
   } else {
-    parksTable.style.display = "none";
+    nationalParkTable.style.display = "none";
   }
   for (const parks of nationalParksArray) {
     let row = nationalParkTableBody.insertRow(-1);
@@ -145,11 +145,11 @@ function loadParkTypeList() {
   }
 }
 
-function statesListChanged() {
-  const stateName = statesList.value;
-  console.log(stateName);
-  loadNationalParkTableByStateName(stateName);
-}
+// function statesListChanged() {
+// const stateName = statesList.value;
+// console.log(stateName);
+// loadNationalParkTableByStateName(stateName);
+// }
 
 // functions for radio button to hide
 function parkTypeSelectorStates() {
@@ -184,16 +184,14 @@ function parkTypeSelectorType() {
 // show functions for states
 
 //wire-up functions that was created in the last step
-
 statesList.onchange = loadNationalParkTableByStateName;
 parkTypeList.onchange = loadNationalParkTableByParkType;
 
 loadStatesList();
 loadParkTypeList();
 
-
 statesRadio.onclick = parkTypeSelectorStates;
 
-typeRadio.onclick = parkTypeSelectorType();
+typeRadio.onclick = parkTypeSelectorType;
 
-allRadio.onclick = loadNationalParkTable();
+allRadio.onclick = loadNationalParkTable;
