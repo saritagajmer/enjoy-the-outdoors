@@ -65,4 +65,5 @@ function loadMountainsTable() {
 
 mountainsList.onchange = loadMountainsTable;
 loadMountainsList();
-selectMountains();
+// selectMountains();
+// 

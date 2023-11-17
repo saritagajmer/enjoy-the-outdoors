@@ -43,12 +43,22 @@ function loadNationalParkTable() {
     let cell6 = row.insertCell(5);
     cell6.innerText = parks.Phone;
 
+    let cell7 = row.insertCell(6);
+    cell7.innerText = parks.Fax;
+
+    let cell8 = row.insertCell(7);
+    cell8.innerText = parks.Latitude;
+
+    let cell9 = row.insertCell(8);
+    cell9.innerText = parks.Longitude;
+
     if (parks.Visit) {
       var link = document.createElement("a");
-      let cell7 = row.insertCell(6);
+      let cell10 = row.insertCell(9);
       link.href = parks.Visit;
+      link.target = `_blank`;
       link.innerText = parks.LocationName;
-      cell7.appendChild(link);
+      cell10.appendChild(link);
     }
   }
 }
@@ -78,12 +88,20 @@ function loadNationalParkTableByStateName() {
       cell5.innerText = park.ZipCode;
       let cell6 = row.insertCell(5);
       cell6.innerText = park.Phone;
+      let cell7 = row.insertCell(6);
+      cell7.innerText = park.Fax;
+      let cell8 = row.insertCell(7);
+      cell8.innerText = park.Latitude;
+      let cell9 = row.insertCell(8);
+      cell9.innerText = park.Longitude;
+
       if (park.Visit) {
         var link = document.createElement("a");
-        let cell7 = row.insertCell(6);
+        let cell10 = row.insertCell(9);
         link.href = park.Visit;
         link.innerText = park.LocationName;
-        cell7.appendChild(link);
+        link.target = `_blank`;
+        cell10.appendChild(link);
       }
       console.log(park);
     }
@@ -116,12 +134,21 @@ function loadNationalParkTableByParkType() {
     cell5.innerText = park.ZipCode;
     let cell6 = row.insertCell(5);
     cell6.innerText = park.Phone;
+
+    let cell7 = row.insertCell(6);
+    cell7.innerText = park.Fax;
+    let cell8 = row.insertCell(7);
+    cell8.innerText = park.Latitude;
+    let cell9 = row.insertCell(8);
+    cell9.innerText = park.Longitude;
+
     if (park.Visit) {
       var link = document.createElement("a");
-      let cell7 = row.insertCell(6);
+      let cell10 = row.insertCell(9);
       link.href = park.Visit;
       link.innerText = park.LocationName;
-      cell7.appendChild(link);
+      link.target = `_blank`;
+      cell10.appendChild(link);
     }
     console.log(park);
   }

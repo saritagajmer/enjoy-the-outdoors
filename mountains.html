@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains Information Page</title>
-    <link rel="stylesheet" href="css/styles.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+
+    <style>
+      /* Teal Light scheme (Default) */
+      /* Can be forced with data-theme="light" */
+      [data-theme="light"],
+      :root:not([data-theme="dark"]) {
+        --primary: #00897b;
+        --primary-hover: #00796b;
+        --primary-focus: rgba(0, 137, 123, 0.125);
+        --primary-inverse: #fff;
+
+        /* background-color: rgb(248, 234, 237); */
+      }
+    </style>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <!-- <h2>outdoor explorer</h2> -->
+      <nav>
+        <a href="index.html"> Home Page</a>
+        <a href="mountains.html">Mountains</a>
+        <a href="parks.html">National Park</a>
+      </nav>
     </header>
     <main>
       <form>

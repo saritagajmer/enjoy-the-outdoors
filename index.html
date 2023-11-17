@@ -4,18 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <style>
+      /* Teal Light scheme (Default) */
+      /* Can be forced with data-theme="light" */
+      [data-theme="light"],
+      :root:not([data-theme="dark"]) {
+        --primary: #00897b;
+        --primary-hover: #00796b;
+        --primary-focus: rgba(0, 137, 123, 0.125);
+        --primary-inverse: #fff;
+
+        body {
+          background-size: auto;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+
+  <body background="images/scenic.jpg">
     <header>
-      <h1>Outdoor Explorer</h1>
-    </header>
-    <main>
-      <section>
+      <nav>
+        <a href="index.html">Home Page</a>
         <a href="mountains.html">Mountains</a>
         <a href="parks.html">National Park</a>
-      </section>
-      <div class="container"></div>
+      </nav>
+    </header>
+    <main>
+
+
+
+      <div class="container">
+        <div class="container">
+          <div class="text">
+            Outdoor Explorer
+            <h1>Dare to Explore, Where Every Moment Becomes a Memory</h1>
+          </div>
+          <img src="images/scenic.jpg" style="max-width: 100%" />
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="scripts/mountains.js"></script>
